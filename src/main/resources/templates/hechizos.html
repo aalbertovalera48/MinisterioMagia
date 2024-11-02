@@ -1,10 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Hechizos</title>
 </head>
 <body>
-$END$
+<h1>Lista de Hechizos</h1>
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Tipo</th>
+    <th>Autorizado</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="hechizo : ${hechizos}">
+    <td th:text="${hechizo.id}"></td>
+    <td th:text="${hechizo.nombre}"></td>
+    <td th:text="${hechizo.descripcion}"></td>
+    <td th:text="${hechizo.tipo}"></td>
+    <td th:text="${hechizo.autorizado}"></td>
+  </tr>
+  </tbody>
+</table>
 </body>
 </html>
