@@ -1,7 +1,7 @@
 # Ministerio Magia
 ## Hecho por: 
 Alberto Valera, Inés Elena Gómez, Mario Serrano
-Link GitHub: 
+Link GitHub: https://github.com/aalbertovalera48/MinisterioMagia.git
 
 ## Descripción
 
@@ -34,6 +34,7 @@ El sistema incluye un script SQL que crea la tabla de hechizos y agrega algunos 
 - **Spring Security**: Framework que proporciona autenticación y autorización a las aplicaciones.
 - **SQLite**: Sistema de gestión de bases de datos ligero y fácil de usar.
 - **Java**: Lenguaje de programación utilizado para el desarrollo de la aplicación.
+- **Docker**: Plataforma que permite crear, desplegar y ejecutar aplicaciones en contenedores, facilitando la portabilidad y escalabilidad del software.
 
 ## Conclusión
 
