@@ -1,4 +1,4 @@
-# Ministerio Magia
+# Sistema de Gestión Mágico en el Ministerio de Magia
 ## Hecho por: 
 Alberto Valera, Inés Elena Gómez, Mario Serrano
 Link GitHub: https://github.com/aalbertovalera48/MinisterioMagia.git
