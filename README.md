@@ -1,6 +1,7 @@
 # Ministerio Magia
 ## Hecho por: 
 Alberto Valera, Inés Elena Gómez, Mario Serrano
+Link GitHub: 
 
 ## Descripción
 
@@ -34,12 +35,17 @@ El sistema incluye un script SQL que crea la tabla de hechizos y agrega algunos 
 - **SQLite**: Sistema de gestión de bases de datos ligero y fácil de usar.
 - **Java**: Lenguaje de programación utilizado para el desarrollo de la aplicación.
 
+## Conclusión
 
+El proyecto **Ministerio de Magia** proporciona una base sólida para gestionar hechizos de manera segura y eficiente. A través de la implementación de seguridad y auditoría, se garantiza que solo los usuarios autorizados puedan realizar operaciones críticas en el sistema, promoviendo así un ambiente controlado y confiable.
 
-## Licencia
+## Mejoras Futuras
 
-Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+Para proyectos relacionados, se podrían considerar las siguientes mejoras:
 
-## Contacto
+- **Integración de una base de datos más robusta**: Aunque SQLite es útil para desarrollo y pruebas, migrar a una base de datos más escalable como PostgreSQL o MySQL podría ser beneficioso para aplicaciones en producción.
+- **Interfaz de usuario mejorada**: Desarrollar una interfaz gráfica utilizando tecnologías como Angular o React para mejorar la experiencia del usuario.
+- **Funcionalidades adicionales**: Implementar funcionalidades como la gestión de usuarios, roles más detallados, y notificaciones por correo electrónico sobre actividades en el sistema.
+- **Pruebas automatizadas**: Incluir pruebas unitarias y de integración para asegurar la estabilidad del sistema a medida que evoluciona.
+- **Documentación extendida**: Proveer una documentación más detallada sobre la API y los flujos de trabajo para facilitar la integración de otros desarrolladores.
 
-Para cualquier pregunta o sugerencia, puedes contactar al autor del proyecto a través de [tu-email@example.com].
