@@ -1,14 +1,24 @@
+version: '3.8'
+
 services:
   app:
-    build: .
+    image: ministerio-magia-app:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "8080:8080"
-    depends_on:
-      - db
-
-  db:
-    image: oscarfonts/h2:latest
-    ports:
-      - "8082:8082"
+    volumes:
+      - db_data:/app/data
     environment:
-      H2_OPTIONS: "-tcp -tcpAllowOthers -ifNotExists"
+      SPRING_DATASOURCE_URL: jdbc:sqlite:/app/data/ministerio_magia.db
+      SPRING_DATASOURCE_DRIVER_CLASS_NAME: org.sqlite.JDBC
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_SHOW_SQL: "true"
+      SPRING_SQL_INIT_MODE: always
+      SPRING_DATASOURCE_USERNAME: usuario
+      SPRING_DATASOURCE_PASSWORD: password
+      SPRING_JPA_DATABASE_PLATFORM: com.github.gwenn.sqlite.dialect.SQLiteDialect
+
+volumes:
+  db_data:
